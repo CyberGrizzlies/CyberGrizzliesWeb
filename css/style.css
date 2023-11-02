@@ -39,9 +39,35 @@ nav ul li{
 
 nav ul li a{
   text-decoration: none;
-  color: #fff;
-  font-size: 17px;
+  color: #DCE0D9;
+  font-size: 20px;
+  transition: color 0.3s; 
+}
 
+nav ul li a:hover {
+  color: #FF401F; 
+  text-shadow: 2px 2px 4px #0F1924;
+}
+.discord{
+  text-align: center;
+  margin-top: 700px;
+}
+
+.discord a{
+  text-decoration: none;
+  display: inline-block;
+  color: #DCE0D9;
+  font-size: 24px;
+  border: 2px solid #DCE0D9;
+  padding: 14px 70px;
+  border-radius: 50px;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.discord a:hover {
+  background-color: #DCE0D9;
+  color: #0F1924; 
+  border-color: #0F1924;
 }
 
 .bg-video{
@@ -64,3 +90,61 @@ nav ul li a{
     height: 100%;
   }
 }
+
+.about-us {
+  background: #0F1924; 
+  color: #DCE0D9; 
+  padding: 40px;
+  text-align: center;
+}
+
+.about-us h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.about-us p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.about-us .discord-button {
+  display: inline-block;
+  text-decoration: none;
+  background: #FF401F; /* Background color for the button */
+  color: #DCE0D9;
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin-top: 20px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.about-us .discord-button:hover {
+  background: #DCE0D9;
+  color: #0F1924;
+}
+
+.about-us h2 {
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.about-us .video-container {
+  position: relative;
+  padding-bottom: 56.25%; 
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-us .video-container iframe {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  top: 0;
+  
+}
+
+
