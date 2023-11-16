@@ -18,13 +18,14 @@
 
 nav{
   width: 100%;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   padding: 20px 8%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  z-index: 100;
 }
 
 nav .logo{
@@ -56,18 +57,19 @@ nav ul li a:hover {
 .discord a{
   text-decoration: none;
   display: inline-block;
-  color: #DCE0D9;
+  color: #FF401F;
   font-size: 24px;
-  border: 2px solid #DCE0D9;
+  border: 2px solid #FF401F;
   padding: 14px 70px;
   border-radius: 50px;
   transition: background-color 0.3s, border-color 0.3s;
+  background-color: #DCE0D9;
 }
 
 .discord a:hover {
-  background-color: #DCE0D9;
-  color: #0F1924; 
-  border-color: #0F1924;
+  background-color: #0F1924;
+  color: #DCE0D9; 
+  border-color: #FF401F;
 }
 
 .bg-video{
@@ -111,7 +113,7 @@ nav ul li a:hover {
 .about-us .discord-button {
   display: inline-block;
   text-decoration: none;
-  background: #FF401F; /* Background color for the button */
+  background: #FF401F; 
   color: #DCE0D9;
   font-size: 20px;
   padding: 10px 20px;
@@ -128,6 +130,7 @@ nav ul li a:hover {
 .about-us h2 {
   font-size: 24px;
   margin-top: 20px;
+  text-transform: uppercase;
 }
 
 .about-us .video-container {
@@ -146,5 +149,147 @@ nav ul li a:hover {
   top: 0;
   
 }
+
+/*Announcements*/
+
+.announcements {
+  text-align: center;
+  padding: 20px;
+}
+
+.announcements h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 50px 5%; 
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 30%; 
+  max-width: 400px; 
+  height: 350px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  margin: 10px;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.card-content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.card-content p {
+  color: #0F1924;
+  line-height: 1.4;
+}
+
+/*Calendar*/
+
+.event-calendar {
+  text-align: center;
+  padding: 20px;
+}
+
+.event-calendar h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.calendar-line {
+  width: 80%;
+  height: 4px; 
+  background-color: #FF401F;
+  margin: 20px auto; 
+}
+
+.event-calendar img {
+  width: 80%;
+  max-width: 1000px;
+  height: auto;
+  border: 4px solid #FF401F;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+}
+
+/*Footer*/
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+footer {
+  background-color: #DCE0D9;
+  color: #FF401F;
+  padding: 20px;
+  text-align: center;
+}
+
+.social-media {
+  margin-bottom: 15px;
+}
+
+.icon-link {
+  margin: 0 10px;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
+.icon-link img {
+  width: 30px; 
+  transition: transform 0.3s ease-in-out;
+}
+
+.icon-link:hover img {
+  transform: scale(0.9); 
+}
+
+p {
+  margin: 0;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+footer {
+  animation: fadeIn 1s ease-in-out;
+}
+
 
 
