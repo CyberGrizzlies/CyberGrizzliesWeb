@@ -6,7 +6,8 @@
     <title>CyberGrizzlies</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-Kv8QFEIxlRI1jRWVsFVr0bNeXm3ujqPGlA6f5gJ3J6o1kJvVXtHDWIDVA+tr34aF2D6wNUZ9VvMowLho+3OsKg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="./js/script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <script src="js/script.js" defer></script>
 </head>
 <body>
     <div class="hero">
@@ -18,20 +19,22 @@
       <nav id="navbar">
         <img src="assets/Logos/CyberGrizzlies Official Logo.png" class="logo">
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Events</a></li>
-          <li><a href="#">Rosters</a></li>
+          <li><a href="#">Home<span></span></a></li>
+          <li><a href="#about-us">About Us<span></span></a></li>
+          <li><a href="#announcements">Events<span></span></a></li>
+          <li><a href="#rosters">Rosters<span></span></a></li>
         </ul>
       </nav>
       <div class="discord">
         <a href="https://discord.com/invite/EkcEahZ">Join Our Discord</a> 
       </div>
     </div>
-    <div class="about-us">
-      <h1>Welcome to the Cyber Grizzlies Esports Club at Georgian College.</h1>
-      <p>The club focuses on all things esports and gaming. We host fun game nights, have our teams compete in tournaments, watch movies, stream, and a bunch more cool stuff.</p>
-      <p>Visit our <a href="https://discord.com/invite/EkcEahZ" class="discord-button">Discord</a> and connect with other students to have a great time in our community.</p>
+    <div class="about-us" id="about-us">
+      <h1>Welcome to the Cyber Grizzlies Esports Club at Georgian College!</h1>
+      <div class="about-line"></div>
+      <p>Dive into the exciting world of esports and gaming at our club, where we organize engaging game nights, </p> 
+      <p> facilitate competitive tournaments for our teams, host movie nights, streaming sessions, and a variety of other cool activities.</p>
+      <p>Join our Discord community to connect with fellow students and elevate your gaming experience!</p>
       <h2>Here are things we run</h2>
       <div class="video-container">
           <iframe width="560" height="315" src="https://www.youtube.com/embed/ho56lmzz2JM" frameborder="0" allowfullscreen></iframe>
@@ -39,52 +42,110 @@
   </div>
   <!-- Cards Section -->
 
-  <section class="announcements">
-    <h1>Announcements</h1>
+  <section class="announcements" id="announcements">
+    <h1>Latest Events</h1>
 
   <section class="cards">
     <div class="card">
-        <img src="card1.jpg" alt="Announcement 1">
-        <div class="card-content">
-            <h2>Announcement 1 Heading</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
+        <img src="./assets/Announcements/MarioKart.PNG" alt="Announcement 1">
     </div>
 
     <div class="card">
-        <img src="card2.jpg" alt="Announcement 2">
-        <div class="card-content">
-            <h2>Announcement 2 Heading</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
+        <img src="./assets/Announcements/PUBG.PNG" alt="Announcement 2">
     </div>
 
     <div class="card">
-        <img src="card3.jpg" alt="Announcement 3">
-        <div class="card-content">
-            <h2>Announcement 3 Heading</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
+        <img src="./assets/Announcements/VAO.PNG" alt="Announcement 3">
     </div>
     </section>
     </section>
 
 <!--Event Calendar-->
-    <section class="event-calendar">
-      <h1>Event Calendar</h1>
+  <section class="event-calendar" id="event-calendar">
+      <h2>Event Calendar</h2>
       <div class="calendar-line"></div>
       <img src="./assets/Calender/NovemberPoster.png" alt="Event Calendar Image">
+      <p>*visit our discord or instagram for more information on the events</p>
   </section>
 
-<!--Footer-->
-  <footer>
-    <div class="social-media">
-        <a href="#" target="_blank" class="icon-link"><img src="./assets/Logos/insta.jpg" alt="Instagram"></a>
-        <a href="#" target="_blank" class="icon-link"><img src="" alt="Twitter"></a>
-        <a href="#" target="_blank" class="icon-link"><img src="./assets/Logos/discord-icon-43736.png" alt="Discord"></a>
-        <a href="#" target="_blank" class="icon-link"><img src="" alt="TikTok"></a>
+ <div class="rosters" id="rosters">
+
+  <h1>About our Competitive teams</h1>
+  <div class="roster-line"></div>
+  <p>We will have one team per sport and then will add more if there is interest. </p>
+  <p>Teams will compete against other Colleges and Universities across North America. </p>    
+  <p>Games we have teams for are: League Of Legends, CS: GO, Rocket League, Valorant, Overwatch, and Rainbow Six Siege. </p>
+  <h2>Our Former Rosters</h2>
+  
+  <div class="slider">
+  <div class="list">
+    <div class="item">
+      <img src="./assets/Rosters/CG LOL LINEUP.PNG">
     </div>
-    <p>&copy; CyberGrizzlies 2023</p>
+    <div class="item">
+      <img src="./assets/Rosters/LOL TEAM NOX 2022.PNG">
+    </div>
+    <div class="item">
+      <img src="./assets/Rosters/LOL TEAM POLARIS 2022.PNG">
+    </div>
+    <div class="item">
+      <img src="./assets/Rosters/LOL TEAM NIX 2022.PNG">
+    </div>
+    <div class="item">
+      <img src="./assets/Rosters/RL LINEUP.PNG">
+    </div>    
+    <div class="item">
+      <img src="./assets/Rosters/FORTNITE 2022.PNG">
+    </div>
+    <div class="item">
+      <img src="./assets/Rosters/CSGO 2020.PNG">
+    </div>
+    <div class="item">
+      <img src="./assets/Rosters/APEX LEGENDS 2022.PNG">
+    </div>
+    <div class="item">
+      <img src="./assets/Rosters/PUBG 2022.PNG">
+    </div>
+    <div class="item">
+      <img src="./assets/Rosters/HALO INFINITE 2022.PNG">
+    </div>
+  </div>
+
+  <!--PREV AND NEXT BUTTONS-->
+  <div class="buttons">
+    <button id="prev"><</button>
+    <button id="next">></button>
+  </div>
+  <!--DOTS-->
+  <ul class="dots">
+    <li class="active"></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+ </div>
+</div>
+
+<!--Footer-->
+<footer>
+  <div>
+  <div class="footerContainer">
+    <div class="socialIcons">
+        <a href="https://twitter.com/CyberGrizzlies"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/cybergrizzlies/"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@cybergrizzlies"><i class="fab fa-tiktok"></i></a>
+        <a href="https://discord.com/invite/EkcEahZ"><i class="fab fa-discord"></i></a>
+    </div>
+    <div class="footerBottom">
+      <p>&copy; 2023 CyberGrizzlies</p>
+    </div>
+  </div>
 </footer>
-  </body>
+</body>
 </html>
