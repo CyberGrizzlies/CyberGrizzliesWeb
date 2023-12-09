@@ -173,6 +173,11 @@ nav ul li a:hover span{
   font-family: 'gilroy';
 }
 
+.about-us p a{
+  text-decoration: none;
+  color: #FF401F;
+}
+
 .about-us h2 {
   font-size: 24px;
   margin-top: 20px;
@@ -201,6 +206,15 @@ nav ul li a:hover span{
   border-radius: 20px;
   border-style: solid;
   border-color: #DCE0D9;  
+}
+
+.afteraboutus-line{
+  width: 85%;
+  height: 4px; 
+  background-color: #DCE0D9;
+  margin-left: 7.5%;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 /*Announcements*/
@@ -295,7 +309,7 @@ nav ul li a:hover span{
 .rosters{
   background-color: #0F1924;
   padding-top: 100px;
-  padding-bottom: 150px;
+  padding-bottom: 25px;
 }
 
 .rosters h1{
@@ -415,9 +429,213 @@ nav ul li a:hover span{
     }
 }
 
+.afterroster-line{
+  width: 85%;
+  height: 4px; 
+  background-color: #DCE0D9;
+  margin-left: 7.5%;
+  margin-top: 7em;
+}
+
+/*Image Gallery*/
+
+.galleryHeading{
+  background: #0F1924;
+}
+
+.galleryHeading h2{
+  font-size: 2rem;
+  color: #FF401F;
+  display: flex;
+  justify-content: center;
+  text-transform: uppercase;
+  padding-bottom: 2em;
+  padding-top: 2em;
+}
+
+.gallery{
+  height: 60%;
+  width: 100%;
+  display: flex;
+  margin: auto ;
+  padding-left: 10em;
+  padding-right: 10em;
+  box-sizing: border-box;
+  background: #0F1924;
+}
+
+.image-box{
+  margin-top: 1%;
+  margin-bottom: 1%;  
+  margin-left: 1%;
+  margin-right: 1%;
+  flex-grow: 1;
+  flex-basis: 0;
+  transition: .5s;
+  background: #0F1924;
+}
+
+.image-box img{
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+  transition: .5s;
+}
+
+.image-box:hover{
+  flex-basis: 50%;
+}
+
+.active{
+  flex-basis: 50%;
+}
+
+.gallery:hover .active{
+  flex-basis: 0;
+}
+
+.image-box:nth-child(1):hover{
+  flex-basis: 50%;
+}
+
+.aftergallery-line{
+  width: 85%;
+  height: 4px; 
+  background-color: #DCE0D9;
+  margin-left: 7.5%;
+  margin-top: 6em;
+  margin-bottom: 8em;
+}
+
+/*How to Join*/
+
+.howtojoin{
+  background: #0F1924; 
+  color: #DCE0D9; 
+  padding: 40px;
+  text-align: center;
+}
+
+.howtojoin h2{
+  font-size: 2em;
+  text-transform: uppercase;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  color: #FF401F;
+}
+
+.afterjoin-line{
+  width: 85%;
+  height: 4px; 
+  background-color: #DCE0D9;
+  margin-left: 7.5%;
+  margin-top: 7em;
+}
+
+/* Thanks Section */
+
+.donorHeadings{
+  background: #0F1924;
+}
+
+.donorHeadings h2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  text-transform: uppercase;
+  padding-top: 2em;
+  color: #FF401F;
+  background: #0F1924;
+}
+
+.donorHeadings h3{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+  text-transform: uppercase;
+  padding-bottom: 2em;
+  color: #FF401F;
+  background: #0F1924;
+}
+
+.donors {
+  background: #0F1924;
+  display: flex;
+  justify-content: space-between;
+}
+
+#accordion {
+  margin: auto;
+  width: 600px; 
+  background: #0F1924;
+}
+
+.left-section {
+  margin-left: 220px; 
+}
+
+.right-section {
+  margin-right: 220px; 
+}
+
+#accordion li {
+  list-style: none;
+  width: 100%;
+  background: #0F1924;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  border-color: #FF401F;
+}
+
+#accordion li label {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #FF401F;
+  text-transform: uppercase;
+}
+
+#accordion li label span {
+  transform: rotate(90deg);
+  font-size: 22px;
+  color: #FF401F;
+  font-weight: bold;
+}
+
+#accordion label + input[type="radio"] {
+  display: none;
+}
+
+#accordion .content {
+  padding: 0 10px;
+  line-height: 26px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s;
+  font-weight: 400;
+  color: #DCE0D9;
+}
+
+#accordion label + input[type="radio"]:checked + .content {
+  max-height: 400px;
+}
+
+#accordion input[type="radio"]:not(:checked)+.content {
+  max-height: 0;
+}
+
+
 /* Footer */
 footer {
   background-color: #0F1924;
+  padding-top: 3em;
 }
 
 .footerContainer {
@@ -428,7 +646,7 @@ footer {
 
 .socialIcons {
   display: flex;
-  justify-content: flex-end; /* Move icons to the right */
+  justify-content: flex-end; 
   margin-right: 25em;
 }
 
