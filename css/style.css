@@ -1,16 +1,29 @@
 @font-face {
   font-family: 'gilroy';
-  src: url('/assets/Fonts/Gilroy-Light.ttf') format('truetype');
+  src: url('Fonts/Gilroy-Light.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Apex';
-  src: url('/assets/Fonts/ApexMk3-Medium.otf') format('truetype');
+  src: url('Fonts/ApexMk3-Medium.otf') format('opentype');
+}
+
+h1, 
+a,
+h2,
+h3 {
+  font-family: 'Apex', sans-serif;
+}
+
+
+
+p, label {
+  font-family: 'gilroy', sans-serif;
 }
 
 /* width */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 5px;
 }
 
 /* Track */
@@ -156,7 +169,7 @@ nav ul li a:hover span{
   margin-top: 2em;
   text-transform: uppercase;
   color: #FF401F;
-  font-family: 'Apex';
+  font-family: 'Apex', sans-serif;
 }
 
 .about-line{
@@ -170,7 +183,7 @@ nav ul li a:hover span{
 .about-us p {
   font-size: 18px;
   margin-bottom: 20px;
-  font-family: 'gilroy';
+  font-family: 'gilroy', sans-serif;
 }
 
 .about-us p a{
@@ -393,7 +406,7 @@ nav ul li a:hover span{
   background-color: #393A39;
   color: #DCE0D9;
   border: none;
-  font-family: monospace;
+  /* font-family: monospace; */
   font-weight: bold;
 }
 
