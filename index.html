@@ -46,23 +46,8 @@
     <h1>Latest Events / News</h1>
 
   <section class="cards">  
-    <div class="card">
-      <a href="https://www.instagram.com/p/C0eyrNUxRED/?img_index=1" target="_blank">
-        <img src="./assets/Announcements/MarioKart.PNG" alt="Announcement 1">
-    </a>
-    </div>
-
-    <div class="card">
-      <a href="https://www.instagram.com/p/C0N9hQuOu8l/" target="_blank">
-        <img src="./assets/Announcements/CGNOXVSKCGOLD.PNG" alt="Announcement 2">
-    </a>
-    </div>
-
-    <div class="card">
-      <a href="https://www.instagram.com/p/C0g6jZjMSoY/" target="_blank">
-        <img src="./assets/Announcements/BEATSABER.PNG" alt="Announcement 3">
-    </a>
-    </div>
+   <!-- Place <div> tag where you want the feed to appear -->
+<div id="curator-feed-default-feed-layout"><a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a></div>
     </section>
     </section>
 
@@ -306,6 +291,15 @@
     </div>
   </div>
   <script src="js/script.js" defer></script>
+  <!-- The Javascript can be moved to the end of the html page before the </body> tag -->
+  <script type="text/javascript">
+  /* curator-feed-default-feed-layout */
+  (function(){
+  var i,e,d=document,s="script";i=d.createElement("script");i.async=1;i.charset="UTF-8";
+  i.src="https://cdn.curator.io/published/fb42008a-73e9-4f87-a70e-12395f6743c6.js";
+  e=d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
+  })();
+  </script>
 </footer>
 </body>
 </html>

@@ -243,33 +243,11 @@ nav ul li a:hover span{
 }
 
 .cards {
-  display: flex;
-  justify-content: space-between; 
-  align-items: center;
   padding: 50px 10%; 
-  flex-wrap: wrap;
 }
 
-.card {
-  width: 30%; 
-  max-width: 400px; 
-  height: 380px;
-  border: 1px solid #FF401F;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-  margin: 10px;
-}
-
-.card:hover {
-  transform: scale(1.1);
-}
-
-.card img {
-  width: 100%;
-  height: fit-content;
-  object-fit: cover;
+.crt-select-post-body, .crt-post-username > a {
+  font-family: gilroyLight !important;
 }
 
 
