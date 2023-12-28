@@ -1,16 +1,292 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CyberGrizzlies</title>
-</head>
-<body>
-       <h1>Hello Grizzlies</h1> 
-       <nav>
-        <a href="/">Home</a>
-        <a href="#about">about</a>
-       </nav>
-       <h2>New Website YAY!</h2>
-</body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Intro Section -->
+    <div class="hero">
+      <video autoplay loop muted class="bg-video">
+        <source src="https://ik.imagekit.io/CyberGrizzlies/Videos/CGINTROVID.mp4" type="video/mp4" />
+      </video>
+
+      <nav id="navbar">
+        <img src="https://ik.imagekit.io/CyberGrizzlies/Logos/CyberGrizzlies%20Official%20Logo.png" class="logo" />
+        <div>
+          <a href="#about-us">About Us</a>
+          <a href="#announcements">Events</a>
+          <a href="#rosters">Rosters</a>
+          <a href="#donor">Donors</a>
+        </div>
+      </nav>
+      <div class="discord">
+        <a href="https://discord.com/invite/EkcEahZ">Join Our Discord</a>
+      </div>
+    </div>
+    <!-- About Section -->
+    <div class="about-us" id="about-us">
+      <h1>Welcome to the Cyber Grizzlies Esports Club at Georgian College!</h1>
+      <div class="about-line"></div>
+      <p>
+        Dive into the exciting world of esports and gaming at our club, where we
+        organize engaging game nights,
+      </p>
+      <p>
+        facilitate competitive tournaments for our teams, host movie nights,
+        streaming sessions, and a variety of other cool activities.
+      </p>
+      <p>
+        Join our Discord community to connect with other students and elevate
+        your gaming experience!
+      </p>
+      <p>
+        To learn how to join the CyberGrizzlies discord, click
+        <a href="#howtojoin">here</a>!
+      </p>
+      <h3>Here are things we run</h3>
+
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/IaI90PzVFqA?si=RBDIufpkQlOFK7TW"
+        title="YouTube video player"
+        frameborder="0"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+    <!-- Announcements Section -->
+
+    <section class="announcements" id="announcements">
+      <h2>Latest Events & News</h2>
+
+      <section class="cards">
+        <!-- Place <div> tag where you want the feed to appear -->
+        <div id="curator-feed-default-feed-layout">
+          <div id="curator-feed-default-feed-layout">
+            <a
+              href="https://curator.io"
+              target="_blank"
+              class="crt-logo crt-tag"
+              >Powered by Curator.io</a
+            >
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!--Event Calendar-->
+    <section class="event-calendar" id="event-calendar">
+      <h2>Event Calendar</h2>
+      <div class="calendar-line"></div>
+      <a
+        href="https://ik.imagekit.io/CyberGrizzlies/Calendar/CurrentCalendar.png"
+        target="”_blank”"
+      >
+        <img
+          src="https://ik.imagekit.io/CyberGrizzlies/Calendar/CurrentCalendar.png"
+          alt="Event Calendar Image"
+        />
+      </a>
+      <p>*visit our discord or instagram for more information on the events</p>
+    </section>
+
+    <!-- Rosters -->
+    <div class="rosters" id="rosters">
+      <h1>About our Competitive teams</h1>
+      <div class="roster-line"></div>
+      <p>
+        We will have one team per sport and then will add more if there is
+        interest.
+      </p>
+      <p>
+        Teams will compete against other Colleges and Universities across North
+        America.
+      </p>
+      <p>
+        Games we have teams for are: League Of Legends, CS: GO, Rocket League,
+        Valorant, Overwatch, and Rainbow Six Siege.
+      </p>
+      <h2>Check them out on PlayerBase</h2>
+      <h3>Coming Soon</h3>
+      <div class="afterroster-line"></div>
+    </div>
+
+    <!--How to Join-->
+    <div class="howtojoin" id="howtojoin">
+      <div class="aftergallery-line"></div>
+      <h2>Watch the Video to learn How to join the Club's Discord</h2>
+      <div class="video-container">
+        <iframe
+          width="100%"
+          height="100%"
+          src="https://imagekit.io/player/embed/CyberGrizzlies/Videos/howtojoinsample.mp4?thumbnail=https%3A%2F%2Fik.imagekit.io%2FCyberGrizzlies%2FVideos%2Fhowtojoinsample.mp4%2Fik-thumbnail.jpg&updatedAt=1703725998686"
+          title="ImageKit video player"
+          frameborder="0"
+          allow="fullscreen"
+        >
+        </iframe>
+      </div>
+      <div class="afterjoin-line"></div>
+    </div>
+
+      <!--Donors/Supporters-->
+
+      <div class="donorHeadings" id="donor">
+        <h2>The Cyber Grizzlies Club wants to thank </h2>
+        <h3>all its donors and supporters!</h3>
+        </div>
+        
+            <div class="donors">
+          <div class="left-section">
+          <ul id="accordion">
+            <li>
+              <label for="first">Facility Department<span>&#x3e;</span></label>
+              <input type="radio" name="accordion" id="first">
+              <div class="content">
+                <p>Thank You to the Facility Department for providing us with cab</p>
+              </div>
+            </li>
+            <li>
+              <label for="second">IT Department<span>&#x3e;</span></label>
+              <input type="radio" name="accordion" id="second">
+              <div class="content">
+                <p>Thank You to the IT Department for providing us with custom internet access for the consoles!</p>
+              </div>
+            </li>
+            <li>
+              <label for="third">Automotive Business School of Canada<span>&#x3e;</span></label>
+              <input type="radio" name="accordion" id="third">
+              <div class="content">
+                <p>Thank You to the Automotive Business School of Canada for providing us with the TVs, consoles, controller</p>
+              </div>
+            </li>
+            <li>
+              <label for="forth">Georgian College Student Association<span>&#x3e;</span></label>
+              <input type="radio" name="accordion" id="forth">
+              <div class="content">
+                <p>Thank You to the Georgian College Student Association for providing us with Sponsorship, food, etc.!</p>
+              </div>
+            </li>
+            <li>
+              <label for="fifth">Athletics Department<span>&#x3e;</span></label>
+              <input type="radio" name="accordion" id="fifth">
+              <div class="content">
+                <p>Thank You to the Athletics Department for providing us with Sponsorship, etc.!</p>
+              </div>
+            </li>
+            <li>
+              <label for="sixth">Kavalry(kavalry.ca@gmail.com)<span>&#x3e;</span></label>
+              <input type="radio" name="accordion" id="sixth">
+              <div class="content">
+                <p>Thank You to Kavalry for providing the Design Services!</p>
+              </div>
+            </li>
+            <li>
+              <label for="seventh">Monster Energy<span>&#x3e;</span></label>
+              <input type="radio" name="accordion" id="seventh">
+              <div class="content">
+                <p>Thank You to Monster Energy for providing us with prizes for all our events!</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="right-section">
+          <ul id="accordion">
+            <li>
+              <label for="eighth">NACE Starleague<span>&#x3e;</span></label>
+              <input type="radio" name="accordion" id="eighth">
+              <div class="content">
+                <p>Thank You to NACE Starleague for providing us with prizes for all our events!</p>
+              </div>
+            </li>
+            <li>
+              <label for="ninth">Riot Games<span>&#x3e;</span></label>
+              <input type="radio" name="accordion" id="ninth">
+              <div class="content">
+                <p>Thank You to Riot Games for providing us with prizes for all our events!</p>
+              </div>
+            </li>
+            <li>
+              <label for="tenth">Sport Administration Program<span>&#x3e;</span></label>
+              <input type="radio" name="accordion" id="tenth">
+              <div class="content">
+                <p>Thank You to the Sport Administration Program for hiring and providing us with Work Placement Students!</p>
+              </div>
+            </li>
+            <li>
+              <label for="eleventh">Financial Aid Office<span>&#x3e;</span></label>
+              <input type="radio" name="accordion" id="eleventh">
+              <div class="content">
+                <p>Thank You to the Financial Aid Office for providing us work-study program funding!</p>
+              </div>
+            </li>
+            <li>
+              <label for="twelvth">Business and Management Program<span>&#x3e;</span></label>
+              <input type="radio" name="accordion" id="twelvth">
+              <div class="content">
+                <p>Thank You to the Business and Management Program for providing us faculty time!</p>
+              </div>
+            </li>
+            <li>
+              <label for="thirteen">Alumni and Advancement Office<span>&#x3e;</span></label>
+              <input type="radio" name="accordion" id="thirteen">
+              <div class="content">
+                <p>Thank You to Alumni and Advancement Office for providing us with the Sponsorship for the amazing jerseys!</p>
+              </div>
+            </li>
+            <li>
+              <label for="fourteen">Volunteers<span>&#x3e;</span></label>
+              <input type="radio" name="accordion" id="fourteen">
+              <div class="content">
+                <p>Thank You to all the amazing Student Volunteers for you help throughout!</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        </div>
+
+<!--Footer-->
+    <footer>
+        <div>
+            <div class="footerContainer">
+              <div class="socialIcons">
+                  <a href="https://twitter.com/CyberGrizzlies">
+                    <img width="100%" height="100%" src="https://ik.imagekit.io/CyberGrizzlies/Logos/X.png" alt="twitter">
+                 </a>
+                  <a href="https://www.instagram.com/cybergrizzlies/">
+                    <img width="100%" height="100%" src="https://ik.imagekit.io/CyberGrizzlies/Logos/insta.png" alt="instagram">
+                 </a>
+                  <a href="https://www.tiktok.com/@cybergrizzlies">
+                    <img width="100%" height="100%" src="https://ik.imagekit.io/CyberGrizzlies/Logos/tiktok.png?updatedAt=1703731743864" alt="tiktok">
+                 </a>
+                  <a href="https://discord.com/invite/EkcEahZ">
+                    <img width="100%" height="100%" src="https://ik.imagekit.io/CyberGrizzlies/Logos/discord-icon-43736.png" alt="Discord">
+                  </a>
+              </div>
+              <div class="footerBottom">
+                <p>&copy; 2023 CyberGrizzlies</p>
+              </div>
+        </div>
+      <script type="text/javascript">
+        /* curator-feed-default-feed-layout */
+        (function () {
+          var i,
+            e,
+            d = document,
+            s = "script";
+          i = d.createElement("script");
+          i.async = 1;
+          i.charset = "UTF-8";
+          i.src =
+            "https://cdn.curator.io/published/fb42008a-73e9-4f87-a70e-12395f6743c6.js";
+          e = d.getElementsByTagName(s)[0];
+          e.parentNode.insertBefore(i, e);
+        })();
+      </script>
+    </footer>
+  </body>
 </html>
