@@ -6,12 +6,12 @@
 
 @font-face {
   font-family: "gilroyLight";
-  src: url("Fonts/Gilroy-Light.ttf") format("truetype");
+  src: url("https://ik.imagekit.io/CyberGrizzlies/Fonts/Gilroy-Light.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Apex";
-  src: url("Fonts/ApexMk3-Medium.otf") format("opentype");
+  src: url("https://ik.imagekit.io/CyberGrizzlies/Fonts/ApexMk3-Medium.otf") format("opentype");
 }
 
 html,
