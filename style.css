@@ -1,8 +1,3 @@
-/* FIX-NOTES 
-
-
-
-*/
 
 @font-face {
   font-family: "gilroyLight";
@@ -19,6 +14,11 @@ body {
   margin: 0;
   padding: 0;
   font-size: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #0f1924;
+
 }
 
 h1,
@@ -70,21 +70,25 @@ label {
 }
 
 /* Header Section */
-.hero {
+.hero { 
+  max-width: 1400px;
+  width: 100%;
   height: 100vh;
+  padding: 0;
+  margin: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  background:url('https://ik.imagekit.io/CyberGrizzlies/Videos/CGINTROVID.mp4');
 }
 
 .bg-video {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  position: fixed;
-  top: 0;
-  z-index: -1;
+  object-position: center;
+  position: absolute;
 }
 
 nav {
@@ -93,6 +97,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   margin: 1em 0 0 0;
+  z-index: 1;
 }
 
 nav .logo {
@@ -188,6 +193,7 @@ nav div a:hover {
   text-align: center;
   display: flex;
   margin: 0 0 1em 0;
+  z-index: 1;
 }
 
 .discord a {
@@ -233,6 +239,7 @@ nav div a:hover {
 
 /* About Us Section */
 .about-us {
+  max-width: 1400px;
   background: #0f1924;
   color: #dce0d9;
   padding: 20px;
@@ -299,6 +306,7 @@ nav div a:hover {
 
 /*Announcements*/
 .announcements {
+  max-width: 1400px;
   text-align: center;
   padding: 2em;
   background: #0f1924;
@@ -323,6 +331,7 @@ nav div a:hover {
 
 /*Calendar*/
 .event-calendar {
+  max-width: 1400px;
   background: #0f1924;
   text-align: center;
   padding: 2em;
@@ -360,6 +369,7 @@ nav div a:hover {
 
 /*ROSTERS*/
 .rosters {
+  max-width: 1400px;
   background-color: #0f1924;
   padding: 1.5em;
   display: flex;
@@ -404,6 +414,7 @@ nav div a:hover {
 
 /*How to Join*/
 .howtojoin {
+  max-width: 1400px;
   background: #0f1924;
   color: #ff401f;
   padding: 2em;
@@ -428,7 +439,7 @@ nav div a:hover {
 
 .video-container {
   max-width: 85vw;
-  width: 85vw;
+  width: 100%;
   height: 35vh;
 }
 
