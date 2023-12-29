@@ -1,16 +1,18 @@
-
 @font-face {
   font-family: "gilroyLight";
-  src: url("https://ik.imagekit.io/CyberGrizzlies/Fonts/Gilroy-Light.ttf") format("truetype");
+  src: url("https://ik.imagekit.io/CyberGrizzlies/Fonts/Gilroy-Light.ttf")
+    format("truetype");
 }
 
 @font-face {
   font-family: "Apex";
-  src: url("https://ik.imagekit.io/CyberGrizzlies/Fonts/ApexMk3-Medium.otf") format("opentype");
+  src: url("https://ik.imagekit.io/CyberGrizzlies/Fonts/ApexMk3-Medium.otf")
+    format("opentype");
 }
 
 html,
 body {
+  scroll-behavior: smooth;
   margin: 0;
   padding: 0;
   font-size: 10px;
@@ -18,7 +20,21 @@ body {
   flex-direction: column;
   align-items: center;
   background: #0f1924;
+}
 
+.crt-post-c {
+  font-size: 1.8rem;
+  font-family: gilroyLight !important;
+}
+
+.crt-select-post-body .crt-post-username {
+  margin: 0 0 0.3em 0 !important;
+}
+
+.crt-post-username a {
+  font-size: 1.5rem !important;
+  letter-spacing: 0.1rem;
+  font-family: "Apex" !important;
 }
 
 h1,
@@ -40,7 +56,7 @@ h2 {
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: rem;
   letter-spacing: 0.4rem;
 }
 
@@ -65,22 +81,27 @@ label {
 }
 
 /* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
+ ::-webkit-scrollbar-thumb:hover{
   background: #dce0d9;
 }
 
+::-webkit-scrollbar-track:hover {
+    background: #ff401f;
+}
+
+
 /* Header Section */
-.hero { 
+.hero {
   max-width: 1400px;
   width: 100%;
   height: 100vh;
   padding: 0;
-  margin: 0;
+  margin: 0 0 4em 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  background:url('https://ik.imagekit.io/CyberGrizzlies/Videos/CGINTROVID.mp4');
+  background: url("https://ik.imagekit.io/CyberGrizzlies/Videos/CGINTROVID.mp4");
 }
 
 .bg-video {
@@ -202,6 +223,7 @@ nav div a:hover {
   font-size: 24px;
   border: 2px solid #ff401f;
   padding: 10px 30px;
+  margin: 0 0 0.3em 0;
   border-radius: 50px;
   transition: background-color 0.3s, border-color 0.3s;
   background-color: #0f1924;
@@ -247,6 +269,7 @@ nav div a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 8em 0 8em 0;
 }
 
 .about-us h1 {
@@ -257,8 +280,8 @@ nav div a:hover {
 }
 
 .about-line {
-  width: 80%;
-  height: 0.5em;
+  width: 100%;
+  height: 0.4em;
   background-color: #ff401f;
   border-radius: 1em;
   margin: 0 0 1em 0;
@@ -288,20 +311,15 @@ nav div a:hover {
 }
 
 .about-us iframe {
-  height: 28em;
-  width: 100%;
-  max-width: 40em;
-  border: solid 1px #dce0d9;
+  max-width: 1000px;
   border-radius: 1.5em;
 }
 
 .afteraboutus-line {
-  width: 85%;
-  height: 4px;
+  width: 100%;
+  height: 0.4em;
   background-color: #dce0d9;
-  margin-left: 7.5%;
-  margin-top: 2em;
-  margin-bottom: 2em;
+  margin: 0.5em 0 2em 0;
 }
 
 /*Announcements*/
@@ -310,6 +328,10 @@ nav div a:hover {
   text-align: center;
   padding: 2em;
   background: #0f1924;
+  margin: 8em 0 8em 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .announcements h2 {
@@ -317,16 +339,19 @@ nav div a:hover {
   text-transform: uppercase;
 }
 
+.announcements-line {
+  width: 100%;
+  height: 0.4em;
+  background-color: #ff401f;
+  margin: 0.5em 0 2em 0;
+  border-radius: 1.5em;
+}
+
 .cards {
-  margin: 0 1.5em 0 1.5em;
+  max-width: 1400px;
 }
 .crt-grid-post-image {
   margin: 1em;
-}
-
-.crt-select-post-body,
-.crt-post-username > a {
-  font-family: gilroyLight !important;
 }
 
 /*Calendar*/
@@ -335,6 +360,7 @@ nav div a:hover {
   background: #0f1924;
   text-align: center;
   padding: 2em;
+  margin: 8em 0 8em 0;
 }
 
 .event-calendar h2 {
@@ -344,10 +370,10 @@ nav div a:hover {
 }
 
 .calendar-line {
-  width: 70%;
+  width: 100%;
   height: 4px;
   background-color: #ff401f;
-  margin: 20px auto;
+  margin: 0.5em 0 2em 0;
 }
 
 .event-calendar img {
@@ -371,7 +397,8 @@ nav div a:hover {
 .rosters {
   max-width: 1400px;
   background-color: #0f1924;
-  padding: 1.5em;
+  padding: 2em;
+  margin: 4em 0 4em 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -384,10 +411,10 @@ nav div a:hover {
 }
 
 .roster-line {
-  width: 85%;
-  height: 4px;
+  width: 100%;
+  height: 0.4em;
   background-color: #ff401f;
-  margin-bottom: 2.5em;
+  margin: 0.5em 0 4em 0;
 }
 
 .rosters p {
@@ -397,19 +424,11 @@ nav div a:hover {
 }
 
 .rosters h2 {
-  margin: 2em 0 2em 0;
   color: #ff401f;
 }
 
 .rosters h3 {
   color: #ff401f;
-}
-
-.afterroster-line {
-  width: 85%;
-  height: 4px;
-  background-color: #dce0d9;
-  margin-top: 7em;
 }
 
 /*How to Join*/
@@ -418,6 +437,7 @@ nav div a:hover {
   background: #0f1924;
   color: #ff401f;
   padding: 2em;
+  margin: 8em 0 14em 0;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -430,17 +450,32 @@ nav div a:hover {
   color: #ff401f;
 }
 
+.afterroster-line,
 .afterjoin-line {
-  width: 85%;
-  height: 4px;
+  width: 100%;
+  height: 0.4em;
   background-color: #dce0d9;
-  margin-top: 7em;
+  border-radius: 1.5em;
 }
+
+.afterroster-line {
+  margin: 0.5em 0 8em 0;
+}
+
+.afterjoin-line {
+    margin: 8em 0 0 0;
+  }
 
 .video-container {
   max-width: 85vw;
   width: 100%;
   height: 35vh;
+}
+
+.video-container iframe {
+  display: flex;
+  max-width: 1000px;
+  border-radius: 1.5em;
 }
 
 /* Donors Section */
@@ -562,7 +597,6 @@ footer {
 }
 
 .socialIcons a i {
-  font-size: 1.5em;
   color: #0f1924;
   opacity: 0.9;
 }
