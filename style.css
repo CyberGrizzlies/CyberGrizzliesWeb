@@ -235,7 +235,7 @@ nav div a:hover {
   border-color: #ff401f;
 }
 
-@media screen and (max-width: 605px) {
+@media screen and (max-width: 625px) {
   nav div {
     display: flex;
     flex-direction: column;
