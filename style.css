@@ -56,7 +56,7 @@ h2 {
 }
 
 h3 {
-  font-size: rem;
+  font-size: 2rem;
   letter-spacing: 0.4rem;
 }
 
@@ -223,7 +223,7 @@ nav div a:hover {
   font-size: 24px;
   border: 2px solid #ff401f;
   padding: 10px 30px;
-  margin: 0 0 0.3em 0;
+  margin: 0 0 2.2em 0;
   border-radius: 50px;
   transition: background-color 0.3s, border-color 0.3s;
   background-color: #0f1924;
@@ -235,7 +235,7 @@ nav div a:hover {
   border-color: #ff401f;
 }
 
-@media screen and (max-width: 605px) {
+@media screen and (max-width: 625px) {
   nav div {
     display: flex;
     flex-direction: column;
@@ -252,10 +252,8 @@ nav div a:hover {
   }
   nav div {
     width: 23em;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
   }
 }
 
@@ -568,6 +566,10 @@ nav div a:hover {
 
 #accordion input[type="radio"]:not(:checked) + .content {
   max-height: 0;
+}
+
+.right-section {
+  width: 100%;
 }
 
 /* Footer */
